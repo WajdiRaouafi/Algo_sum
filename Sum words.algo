@@ -1,7 +1,7 @@
 ALGORITHM Sum;
 VAR
     C: CHAR;
-    S, nbw, nbv: INTEGER;
+    S, nbw, nbv:=0 : INTEGER;
 BEGIN
     Write ("Tape here :");
     While (C <>'.')
@@ -10,7 +10,7 @@ BEGIN
       If (C=' ')
        nbw:=nbw+1;
       end_If
-      If (C='A' or C='E' or C='I'or C='O'or C='U' or C='a' or C='e' or C='i'or C='o'or C='u' )    
+      If (Uppercase(C)='A' or Uppercase(C)='E' or Uppercase(C)='I'or Uppercase(C)='O'or Uppercase(C)='U')    
        nbv:=nbv+1;
       end_If
     end_While
