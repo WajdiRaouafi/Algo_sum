@@ -1,0 +1,20 @@
+ALGORITHM Sum;
+VAR
+    C: CHAR;
+    S, nbw, nbv: INTEGER;
+BEGIN
+    Write ("Tape here :");
+    While (C <>'.')
+     Read (C)
+     S:=S+1;
+      If (C=' ')
+       nbw:=nbw+1;
+      end_If
+      If (C='A' or C='E' or C='I'or C='O'or C='U' or C='a' or C='e' or C='i'or C='o'or C='u' )    
+       nbv:=nbv+1;
+      end_If
+    end_While
+    Write ("The length of the sentence = ",S);
+    Write ("The number of words in the sentence =",nbw);
+    Write ("The number of vowels in the sentence =",nbv);
+END 
